@@ -1,0 +1,132 @@
+Here's a **detailed prompt** for your **Crypto Trading Prediction App** using Streamlit — perfect for using in ChatGPT, GitHub, Notion, or as a spec for development:
+
+---
+
+## 🧠 Detailed Project Prompt: **Crypto Trading Prediction & Strategy App**
+
+> Create a fully functional **Crypto Trading Prediction Web App** using **Streamlit** that combines **real-time market data**, **machine learning-based forecasting**, and **technical strategy analysis**. The app should be designed for both beginner and intermediate crypto traders to analyze coins, test strategies, and predict future prices — all in an interactive, visually appealing dashboard. The final product should be engaging enough for **YouTube content**, with clean UI, real-time functionality, and insightful analytics.
+
+---
+
+### ✅ Functional Requirements
+
+#### 1. 📊 **Live Market Data Panel**
+
+* Fetch real-time prices for selected cryptocurrencies (e.g., BTC, ETH, DOGE) using **Binance API** or **CoinGecko API**.
+* Show current price, 24h change, market cap, volume, and basic charts.
+* Allow selection of coin, currency (INR/USD), and interval (1h/1d/1w).
+
+---
+
+#### 2. 📈 **Historical Chart & Technical Indicators**
+
+* Plot line/candlestick charts of historical prices (1M, 3M, 6M, 1Y).
+* Add indicators like:
+
+  * **SMA (Simple Moving Average)**
+  * **EMA (Exponential Moving Average)**
+  * **MACD, RSI, Bollinger Bands**
+* Let users toggle indicators on/off.
+
+---
+
+#### 3. 🤖 **Price Prediction Module**
+
+* Train & use one or more ML models to predict next-day or 7-day price trends:
+
+  * **LSTM neural network** (preferred for time series)
+  * OR **Prophet** / **ARIMA** as simpler fallback
+* Display predictions alongside confidence intervals.
+
+---
+
+#### 4. 💹 **Trading Strategy Simulator**
+
+* Allow user to test strategies like:
+
+  * SMA/EMA crossover
+  * RSI overbought/oversold zones
+  * Custom thresholds
+* Visualize:
+
+  * Buy/Sell signals on the price chart
+  * Portfolio growth, returns, risk metrics
+  * Win rate, Sharpe ratio, max drawdown
+
+---
+
+#### 5. 🧪 **Backtesting Module**
+
+* Let users run strategies on historical data.
+* Provide metrics:
+
+  * Total return
+  * CAGR
+  * Number of trades
+  * Accuracy
+  * Profit factor
+* Show trade logs (date, action, price, outcome).
+
+---
+
+#### 6. 🧾 **Paper Trading (Demo Mode)**
+
+* Start with ₹1,00,000 or \$10,000 virtual balance.
+* Users can manually execute trades based on prediction/signals.
+* Show portfolio breakdown and PnL over time.
+
+---
+
+#### 7. 🧠 **Optional: Sentiment Analysis**
+
+* Analyze latest crypto-related tweets/news.
+* Use basic NLP model to classify sentiment: Positive / Neutral / Negative.
+
+---
+
+### 🎨 UI/UX Design Guidelines
+
+* Responsive layout using **Streamlit's sidebar** and **tabs**.
+* Clear KPI cards for:
+
+  * Current price
+  * Prediction for next 24h
+  * Last signal
+  * Portfolio value
+* Use **Plotly** for interactive charts.
+* Add tooltips or info buttons for beginners.
+
+---
+
+### 💾 Data Sources
+
+* **Historical Data**: `yfinance`, `cryptocompare`, or Binance
+* **Live Data**: CoinGecko API or Binance API
+* **News/Tweets**: Optional — Twitter API or RSS feed
+
+---
+
+### 🔧 Tech Stack
+
+* Streamlit
+* Python (pandas, numpy, scikit-learn, keras/tensorflow or prophet)
+* Plotly / Matplotlib
+* Backtrader / custom logic for backtesting
+
+---
+
+### 📹 YouTube Integration Ideas
+
+* Use screen recording to demonstrate each module
+* Show predictions in real-time with a demo trade
+* Compare ML vs basic strategies
+* Create mini-series:
+
+  * Part 1: Price Tracking
+  * Part 2: AI Predictions
+  * Part 3: Build Your Strategy
+  * Part 4: Deploy & Share
+
+---
+
+Would you like a **starter code**, folder structure, or design wireframe next?
